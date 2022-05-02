@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-
+    GameSaveFile saveFile;
     public GameObject[] menu;
 
 
@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     
     private void Start()
     {
-        
+
     }
 
     // Update is called once per frame

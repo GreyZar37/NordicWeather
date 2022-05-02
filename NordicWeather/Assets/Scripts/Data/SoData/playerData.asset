@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf6011f096a9ba47b53d7c6090f7b00, type: 3}
+  m_Name: playerData
+  m_EditorClassIdentifier: 
+  textBio: troll, in early Scandinavian folklore, giant, monstrous being, sometimes
+    possessing magic powers. Hostile to men
+  unitName: TROLL
+  unitLevel: 4
+  damage: 8
+  currentHealth: 0
+  maxHealth: 200
+  sheild: 40
+  unitElement: Earth

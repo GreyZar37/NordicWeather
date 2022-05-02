@@ -16,7 +16,11 @@ public class unit : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
 
-    
+    public string element;
+    public float sheild;
+
+    public string bio;
+
     
   
     public bool takeDamage(int damage)

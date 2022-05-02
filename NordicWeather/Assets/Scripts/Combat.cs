@@ -16,6 +16,10 @@ public class Combat : MonoBehaviour
     public TextMeshProUGUI gameStatusTxt;
     public TextMeshProUGUI returnButtonTxt;
 
+    public GameObject[] godsAndCreatures;
+
+    public data data;
+    public GameSaveFile gameSaveFile;
 
 
     public Transform[] battleStations;
@@ -43,6 +47,8 @@ public class Combat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        print("DataGiven");
+        playerSpawner();
         state = BattleState.START;
         StartCoroutine(setUpBattle());
     }
@@ -57,8 +63,7 @@ public class Combat : MonoBehaviour
 
     IEnumerator setUpBattle()
     {
-        GameObject player = Instantiate(playerPrefab, battleStations[0].position, Quaternion.identity);
-        playerUnit = player.GetComponent<unit>();
+        
 
         int randomEnemy = Random.Range(0, enemyPrefab.Length);
         GameObject enemy = Instantiate(enemyPrefab[randomEnemy], battleStations[1].position, Quaternion.identity);
@@ -436,6 +441,31 @@ public class Combat : MonoBehaviour
 
             }
         }
+
+    }
+    void playerSpawner()
+    {
+        switch (data.unitName)
+        {
+            case "TROLL":
+
+                playerPrefab = godsAndCreatures[0];
+                
+                break;
+            case "ODIN":
+                playerPrefab = godsAndCreatures[1];
+                break;
+            case "THOR":
+                playerPrefab = godsAndCreatures[2];
+                break;
+
+            default:
+                break;
+        }
+
+        GameObject player = Instantiate(playerPrefab, battleStations[0].position, Quaternion.identity);
+        playerUnit = player.GetComponent<unit>();
+        gameSaveFile.playerData(playerUnit);
 
     }
 }

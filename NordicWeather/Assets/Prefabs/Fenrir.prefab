@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -193,7 +193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7689423515667444257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.82, y: 2.05, z: 0}
+  m_LocalPosition: {x: 2.775, y: 1.776, z: 0}
   m_LocalScale: {x: 0.1671596, y: 0.23862322, z: 1}
   m_Children: []
   m_Father: {fileID: 7689423515495296214}
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -301,3 +301,7 @@ MonoBehaviour:
   damage: 20
   currentHealth: 0
   maxHealth: 400
+  element: Wind
+  sheild: 30
+  bio: "Fenrir, also called Fenris\xFAlfr, monstrous wolf of Norse mythology. He
+    was the son of the demoniac god Loki and a giantess, Angerboda."
