@@ -297,11 +297,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   unitName: THOR
-  unitLevel: 2
-  damage: 3
+  unitLevel: 5
+  damage: 15
+  shieldPanetration: 20
   currentHealth: 0
-  maxHealth: 100
+  maxHealth: 150
   element: Lightning
-  sheild: 15
+  shield_: 20
   bio: Thor is a prominent god in Germanic paganism. In Norse mythology, he is a
     hammer-wielding god associated with lightning, thunder and storms

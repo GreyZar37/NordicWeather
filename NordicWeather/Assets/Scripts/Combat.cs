@@ -244,7 +244,7 @@ public class Combat : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
 
-        bool isDead = enemyUnit.takeDamage((playerUnit.damage) * damageMultiplaier);
+        bool isDead = enemyUnit.takeDamage((playerUnit.damage) * damageMultiplaier, playerUnit.shieldPanetration, damageTxt);
         enemyHUD.SetHP(enemyUnit.currentHealth);
         shakeScreen.StartCoroutine(shakeScreen.shaking(0.1f * damageMultiplaier));
         attackSoundWoosh();
@@ -254,7 +254,6 @@ public class Combat : MonoBehaviour
 
         enemyHit.Play();
 
-        damageTxt.text = "-" + ((playerUnit.damage) * damageMultiplaier).ToString();
 
         damageTxt.enabled = true;
 
@@ -279,13 +278,12 @@ public class Combat : MonoBehaviour
        StartCoroutine(crountSound());
         yield return new WaitForSeconds(1f);
 
-        bool isDead = playerUnit.takeDamage(enemyUnit.damage * damageMultiplaier);
+        bool isDead = playerUnit.takeDamage(enemyUnit.damage * damageMultiplaier, enemyUnit.shieldPanetration, damageTxt);
         playerHUD.SetHP(playerUnit.currentHealth);
-        shakeScreen.StartCoroutine(shakeScreen.shaking(0.1f * damageMultiplaier));
+        shakeScreen.StartCoroutine(shakeScreen.shaking(0.1f * damageMultiplaier) );
         
         attackSoundWoosh();
         playerHit.Play();
-        damageTxt.text = "-" + ((enemyUnit.damage) * damageMultiplaier).ToString();
 
         
 

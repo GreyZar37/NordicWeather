@@ -298,10 +298,11 @@ MonoBehaviour:
   type: 1
   unitName: TROLL
   unitLevel: 4
-  damage: 8
+  damage: 12
+  shieldPanetration: 5
   currentHealth: 0
-  maxHealth: 200
+  maxHealth: 250
   element: Earth
-  sheild: 40
+  shield_: 40
   bio: troll, in early Scandinavian folklore, giant, monstrous being, sometimes possessing
     magic powers. Hostile to men

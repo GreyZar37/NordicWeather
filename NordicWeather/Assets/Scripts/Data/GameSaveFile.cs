@@ -43,7 +43,7 @@ public class GameSaveFile : MonoBehaviour
         data.unitName = playerDataSave.unitName;
         data.damage = playerDataSave.damage;
         data.maxHealth = playerDataSave.maxHealth;
-        data.sheild = playerDataSave.sheild;
+        data.sheild = playerDataSave.shield_;
         data.unitElement = playerDataSave.element;
         data.textBio = playerDataSave.bio;
     }
@@ -54,7 +54,7 @@ public class GameSaveFile : MonoBehaviour
         playerDataLoad.damage = data.damage;
         playerDataLoad.unitLevel = data.unitLevel;
         playerDataLoad.unitName = data.unitName;
-        playerDataLoad.sheild = data.sheild;
+        playerDataLoad.shield_ = data.sheild;
         playerDataLoad.element = data.unitElement;
         playerDataLoad.bio = data.textBio;
 

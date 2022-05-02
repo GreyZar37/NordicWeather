@@ -14,8 +14,8 @@ public class data : ScriptableObject
 
     public int damage;
 
-    public int currentHealth;
-    public int maxHealth;
+    public float currentHealth;
+    public float maxHealth;
 
     public float sheild;
     public string unitElement;
@@ -32,7 +32,7 @@ public class data : ScriptableObject
         }
     }
 
-    public int maxHealth_
+    public float maxHealth_
     {
         get
         {
@@ -70,7 +70,7 @@ public class data : ScriptableObject
 
    
 
-    public float sheild_
+    public float shield_
     {
         get
         {

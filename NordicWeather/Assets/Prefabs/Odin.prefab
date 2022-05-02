@@ -131,11 +131,12 @@ MonoBehaviour:
   type: 0
   unitName: ODIN
   unitLevel: 1
-  damage: 7
+  damage: 10
+  shieldPanetration: 30
   currentHealth: 0
-  maxHealth: 100
+  maxHealth: 200
   element: All
-  sheild: 10
+  shield_: 30
   bio: Odin, also called Wodan, Woden, or Wotan, one of the principal gods in Norse
     mythology.
 --- !u!1 &7512058134712339494

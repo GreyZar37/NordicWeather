@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum EnemyType { Human, Troll, beast}
 
@@ -12,20 +13,32 @@ public class unit : MonoBehaviour
     public int unitLevel;
 
     public int damage;
+    public float shieldPanetration;
 
-    public int currentHealth;
-    public int maxHealth;
+    public float currentHealth;
+    public float maxHealth;
 
     public string element;
-    public float sheild;
+    public float shield_;
 
     public string bio;
 
     
+
+    
   
-    public bool takeDamage(int damage)
+    public bool takeDamage(float damage, float shieldPanetration, TextMeshProUGUI damageTxt)
     {
-        currentHealth -= damage;
+        print(shieldPanetration);
+        shield_ -= shieldPanetration;
+        if (shield_ <= 1)
+        {
+            shield_ = 1;
+        }
+
+        currentHealth -= Mathf.Round((damage - (damage * (shield_ / 100))));
+       damageTxt.text = "-" + Mathf.Round((damage - (damage * (shield_ / 100)))).ToString();
+
         if (currentHealth <= 0)
         {
             return true;

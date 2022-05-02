@@ -297,11 +297,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   unitName: Fenrir
-  unitLevel: 12
+  unitLevel: 7
   damage: 20
+  shieldPanetration: 50
   currentHealth: 0
-  maxHealth: 400
+  maxHealth: 175
   element: Wind
-  sheild: 30
+  shield_: 5
   bio: "Fenrir, also called Fenris\xFAlfr, monstrous wolf of Norse mythology. He
     was the son of the demoniac god Loki and a giantess, Angerboda."

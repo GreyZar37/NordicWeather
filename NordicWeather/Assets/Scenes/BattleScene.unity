@@ -17487,6 +17487,7 @@ MonoBehaviour:
   - {fileID: 8118063251704669492, guid: ce5811f270e1ed4479fbd6c0880af635, type: 3}
   - {fileID: 8118063251704669492, guid: 1406eafc8ea40a048ad5ddab26a310fa, type: 3}
   - {fileID: 8118063251704669492, guid: 0e9d2d03a84281c4b842b1dbfe419736, type: 3}
+  - {fileID: 477134758155851411, guid: 495852d89a2c43c45ba95243b20246be, type: 3}
   matchStatMenu: {fileID: 1937109675}
   lootTxt: {fileID: 97283650}
   gameStatusTxt: {fileID: 1250187246}
@@ -17570,7 +17571,6 @@ MonoBehaviour:
   sommer: {fileID: 1828548809}
   winter: {fileID: 2046773217}
   spring: {fileID: 1624272486}
-  currentWeather: 0
 --- !u!1 &1238184816
 GameObject:
   m_ObjectHideFlags: 0

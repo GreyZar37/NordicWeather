@@ -21,7 +21,7 @@ public class BattleHUD : MonoBehaviour
         hpSlider.value = unit.currentHealth;
     }
 
-    public void SetHP(int hp)
+    public void SetHP(float hp)
     {
         hpSlider.value = hp;
         hpValueTxt.text = hp.ToString() + "/" + hpSlider.maxValue.ToString();
