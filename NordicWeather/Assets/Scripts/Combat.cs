@@ -30,6 +30,8 @@ public class Combat : MonoBehaviour
 
     unit playerUnit;
     unit enemyUnit;
+    float elementDamageBonus;
+
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
@@ -244,7 +246,51 @@ public class Combat : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
 
-        bool isDead = enemyUnit.takeDamage((playerUnit.damage) * damageMultiplaier, playerUnit.shieldPanetration, damageTxt);
+        switch (playerUnit.element)
+        {
+            case "Sun":
+                
+                if (WeatherSystem.currentWeather == weather.sunny)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+                break;
+            case "Rain":
+                
+                if (WeatherSystem.currentWeather == weather.rainy)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+
+                break;
+            case "Snow":
+             
+                if (WeatherSystem.currentWeather == weather.snowy)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+
+                break;
+
+
+        }
+      
+        
+        bool isDead = enemyUnit.takeDamage((playerUnit.damage * damageMultiplaier) * elementDamageBonus, playerUnit.shieldPanetration, damageTxt);
+
+        
         enemyHUD.SetHP(enemyUnit.currentHealth);
         shakeScreen.StartCoroutine(shakeScreen.shaking(0.1f * damageMultiplaier));
         attackSoundWoosh();
@@ -278,7 +324,48 @@ public class Combat : MonoBehaviour
        StartCoroutine(crountSound());
         yield return new WaitForSeconds(1f);
 
-        bool isDead = playerUnit.takeDamage(enemyUnit.damage * damageMultiplaier, enemyUnit.shieldPanetration, damageTxt);
+        switch (enemyUnit.element)
+        {
+            case "Sun":
+
+                if (WeatherSystem.currentWeather == weather.sunny)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+                break;
+            case "Rain":
+
+                if (WeatherSystem.currentWeather == weather.rainy)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+
+                break;
+            case "Snow":
+
+                if (WeatherSystem.currentWeather == weather.snowy)
+                {
+                    elementDamageBonus = 1.20f;
+                }
+                else
+                {
+                    elementDamageBonus = 1.00f;
+                }
+
+                break;
+
+
+        }
+
+        bool isDead = playerUnit.takeDamage((enemyUnit.damage * damageMultiplaier) * elementDamageBonus, enemyUnit.shieldPanetration, damageTxt);
         playerHUD.SetHP(playerUnit.currentHealth);
         shakeScreen.StartCoroutine(shakeScreen.shaking(0.1f * damageMultiplaier) );
         

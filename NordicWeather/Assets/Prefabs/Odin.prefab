@@ -135,7 +135,7 @@ MonoBehaviour:
   shieldPanetration: 30
   currentHealth: 0
   maxHealth: 200
-  element: All
+  element: Sun
   shield_: 30
   bio: Odin, also called Wodan, Woden, or Wotan, one of the principal gods in Norse
     mythology.

@@ -302,7 +302,7 @@ MonoBehaviour:
   shieldPanetration: 50
   currentHealth: 0
   maxHealth: 175
-  element: Wind
+  element: Snow
   shield_: 5
   bio: "Fenrir, also called Fenris\xFAlfr, monstrous wolf of Norse mythology. He
     was the son of the demoniac god Loki and a giantess, Angerboda."

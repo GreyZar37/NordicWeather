@@ -302,7 +302,7 @@ MonoBehaviour:
   shieldPanetration: 20
   currentHealth: 0
   maxHealth: 150
-  element: Lightning
+  element: Rain
   shield_: 20
   bio: Thor is a prominent god in Germanic paganism. In Norse mythology, he is a
     hammer-wielding god associated with lightning, thunder and storms

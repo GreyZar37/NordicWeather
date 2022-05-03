@@ -302,7 +302,7 @@ MonoBehaviour:
   shieldPanetration: 5
   currentHealth: 0
   maxHealth: 250
-  element: Earth
+  element: Rain
   shield_: 40
   bio: troll, in early Scandinavian folklore, giant, monstrous being, sometimes possessing
     magic powers. Hostile to men
