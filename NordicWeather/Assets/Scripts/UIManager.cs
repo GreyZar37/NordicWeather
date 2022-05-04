@@ -49,12 +49,12 @@ public class UIManager : MonoBehaviour
     public void controls()
     {
 
-        if (cam.transform.position.x == -4.7f && hasClosed == false)
+        if (cam.transform.position.x == -6 && hasClosed == false)
         {
             closeAllMenus();
             menu[0].SetActive(true);
         }
-        else if (cam.transform.position.x == 4.7f && hasClosed == false)
+        else if (cam.transform.position.x == 6 && hasClosed == false)
         {
             closeAllMenus();
             menu[1].SetActive(true);
@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
             if (cam.transform.position.x < 4.7f)
             {
                 Debug.Log("Swipe Right");
-                cam.transform.position = new Vector3(cam.transform.position.x + 4.7f, cam.transform.position.y, cam.transform.position.z);
+                cam.transform.position = new Vector3(cam.transform.position.x + 6, cam.transform.position.y, cam.transform.position.z);
                 hasClosed = false;
             }
 
@@ -84,7 +84,7 @@ public class UIManager : MonoBehaviour
             if (cam.transform.position.x > -4.7f)
             {
                 Debug.Log("Swipe Left");
-                cam.transform.position = new Vector3(cam.transform.position.x - 4.7f, cam.transform.position.y, cam.transform.position.z);
+                cam.transform.position = new Vector3(cam.transform.position.x - 6, cam.transform.position.y, cam.transform.position.z);
 
                 hasClosed = false;
             }
@@ -107,7 +107,7 @@ public class UIManager : MonoBehaviour
                     if (cam.transform.position.x < 4.7f)
                     {
                         Debug.Log("Swipe Right");
-                        cam.transform.position = new Vector3(cam.transform.position.x + 4.7f, cam.transform.position.y, cam.transform.position.z);
+                        cam.transform.position = new Vector3(cam.transform.position.x + 6, cam.transform.position.y, cam.transform.position.z);
                         hasClosed = false;
                     }
 
@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
                     if (cam.transform.position.x > -4.7f)
                     {
                         Debug.Log("Swipe Left");
-                        cam.transform.position = new Vector3(cam.transform.position.x - 4.7f, cam.transform.position.y, cam.transform.position.z);
+                        cam.transform.position = new Vector3(cam.transform.position.x - 6, cam.transform.position.y, cam.transform.position.z);
 
                         hasClosed = false;
                     }

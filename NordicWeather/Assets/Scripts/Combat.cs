@@ -49,6 +49,7 @@ public class Combat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        elementDamageBonus = 1;
         print("DataGiven");
         playerSpawner();
         state = BattleState.START;
